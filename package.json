@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "build": "concurrently \"cd api && npm i && npm start\" \"cd client && npm i && npm start\" ",
+        "build": "concurrently \"cd api && npm i\" \"cd client && npm i\" ",
         "test": "echo \"No test specified\" && exit 1",
-        "start": "node index.js"
+        "start": "concurrently \"cd api && npm start\" \"cd client && npm start\" "
     },
     "repository": {
         "type": "git",
