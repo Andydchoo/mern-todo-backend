@@ -1,14 +1,23 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+// import express from 'express';
+// import mongoose from 'mongoose';
+// import cors from 'cors';
+// import dotenv from 'dotenv';
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 
+const URI = process.env.MONGO_URI;
+
 mongoose
-  .connect("mongodb://127.0.0.1:27017/mern-todo", {
+  .connect(URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
