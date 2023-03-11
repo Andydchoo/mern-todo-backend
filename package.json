@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "build": "cd api && npm i",
+        "build": "concurrently \"cd api && npm i && npm start\" \"cd client && npm i && npm start\" ",
         "test": "echo \"No test specified\" && exit 1",
         "start": "node index.js"
     },
@@ -16,5 +16,8 @@
     "bugs": {
         "url": "https://github.com/Andydchoo/Mern-todo/issues"
     },
-    "homepage": "https://github.com/Andydchoo/Mern-todo#readme"
+    "homepage": "https://github.com/Andydchoo/Mern-todo#readme",
+    "dependencies": {
+        "concurrently": "^7.6.0"
+    }
 }
