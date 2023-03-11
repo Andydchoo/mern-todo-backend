@@ -2,10 +2,15 @@
     "name": "mern-todo",
     "version": "1.0.0",
     "description": "",
+    "dependencies": {
+        "concurrently": "^7.6.0"
+    },
     "scripts": {
         "build": "concurrently \"cd api && npm i\" \"cd client && npm i\" ",
         "test": "echo \"No test specified\" && exit 1",
-        "start": "concurrently \"cd api && npm start\" \"cd client && npm start\" "
+        "server": "npm start --prefix api",
+        "client": "npm start --prefix client",
+        "start": "concurrently \"npm run server\" \"npm run client\" "
     },
     "repository": {
         "type": "git",
@@ -16,8 +21,5 @@
     "bugs": {
         "url": "https://github.com/Andydchoo/Mern-todo/issues"
     },
-    "homepage": "https://github.com/Andydchoo/Mern-todo#readme",
-    "dependencies": {
-        "concurrently": "^7.6.0"
-    }
+    "homepage": "https://github.com/Andydchoo/Mern-todo#readme"
 }
