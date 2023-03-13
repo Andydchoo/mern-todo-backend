@@ -4,8 +4,7 @@
   "description": "a simple todo list using the mern stack",
   "main": "server.js",
   "scripts": {
-    "build": "react-scripts build",
-    "start": "npm run server",
+    "start": "node server.js",
     "server": "nodemon server.js"
   },
   "author": "Andy Choo",
