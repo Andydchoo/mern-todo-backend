@@ -6,11 +6,9 @@
         "concurrently": "^7.6.0"
     },
     "scripts": {
-        "build": "concurrently \"cd api && npm i\" \"cd client && npm i\" ",
         "test": "echo \"No test specified\" && exit 1",
         "server": "npm start --prefix api",
-        "client": "npm start --prefix client",
-        "start": "cd api && npm start"
+        "client": "npm start --prefix client"
     },
     "repository": {
         "type": "git",
