@@ -16,6 +16,8 @@ app.use(cors());
 
 const URI = process.env.MONGO_URI;
 
+mongoose.set("strictQuery", false);
+
 mongoose
   .connect(URI, {
     useNewUrlParser: true,
