@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-const api_base = 'dark-lime-xerus-tux.cyclic.app';
+const api_base = 'https://dark-lime-xerus-tux.cyclic.app/';
 
 function App() {
   const [todos, setTodos] = useState([]);
