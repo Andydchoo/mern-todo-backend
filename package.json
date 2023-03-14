@@ -8,7 +8,8 @@
     "scripts": {
         "test": "echo \"No test specified\" && exit 1",
         "server": "npm start --prefix api",
-        "client": "npm start --prefix client"
+        "client": "npm start --prefix client",
+        "start": "cd api && npm start"
     },
     "repository": {
         "type": "git",
